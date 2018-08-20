@@ -1,4 +1,5 @@
 internsApp = {};
+fb = firebase;
 
 (function(){
 
@@ -23,10 +24,29 @@ internsApp = {};
 			if(!snapShot){
 				console.log("No data found:");
 			}else{
-				console.log(snapShot.val());
-	  	}
+				var results = snapShot.val();
+				var keys = Object.keys(results);
+				var interns = [];
+				keys.forEach(function(key){
+					var newElement = {}
+					var name = results[key].name;
+					var project = results[key].project;
+					var team = results[key].team;
+					newElement['key'] = key;
+					newElement['name'] = name;
+					newElement['team'] = team;
+					newElement['project'] = project;
+					interns.push(newElement);
+					console.log(key, name, project, team);
+	  		});
+				console.log(interns);
+				internsObj = { internsBinding: interns}
+				console.log(internsObj);
+				ko.applyBindings(internsObj);
 		}
 }
+}
+
 	function messageHandler(err){
 		if(!!err){
 			console.log(err)
