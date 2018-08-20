@@ -16,6 +16,17 @@ internsApp = {};
 		fb.data.create(path, data, messageHandler);
 	}
 
+	function fnRead(){
+		var path = 'interns/';
+		fb.data.read(path, successFn, messageHandler);
+		function successFn(snapShot){
+			if(!snapShot){
+				console.log("No data found:");
+			}else{
+				console.log(snapShot.val());
+	  	}
+		}
+}
 	function messageHandler(err){
 		if(!!err){
 			console.log(err)
@@ -24,4 +35,7 @@ internsApp = {};
 		}
 	}
 	internsApp.Create = fnCreate;
+	internsApp.Read = fnRead;
 })()
+
+internsApp.Read();
