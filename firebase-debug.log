@@ -1,0 +1,43 @@
+[debug] [2018-08-21T07:18:39.902Z] ----------------------------------------------------------------------
+[debug] [2018-08-21T07:18:39.907Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-21T07:18:39.907Z] CLI Version:   3.19.3
+[debug] [2018-08-21T07:18:39.907Z] Platform:      darwin
+[debug] [2018-08-21T07:18:39.907Z] Node Version:  v10.6.0
+[debug] [2018-08-21T07:18:39.915Z] Time:          Tue Aug 21 2018 13:48:39 GMT+0630 (Myanmar Time)
+[debug] [2018-08-21T07:18:39.915Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-21T07:18:39.938Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-21T07:18:39.938Z] > authorizing via signed-in user
+[debug] [2018-08-21T07:18:39.940Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-21T07:18:39.941Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/c5y72MGLuibSBPKT15Tlw2IOhC6TwlyirCU4Dpr6iVE',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Aug 21 2018 13:48:39 GMT+0630 (Myanmar Time)
+[debug] [2018-08-21T07:18:40.421Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T07:18:40.430Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/etd-cu-mdy  
+  
+ Tue Aug 21 2018 13:48:40 GMT+0630 (Myanmar Time)
+[debug] [2018-08-21T07:18:41.664Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T07:18:41.665Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/etd-cu-mdy/tokens  
+  
+ Tue Aug 21 2018 13:48:41 GMT+0630 (Myanmar Time)
+[debug] [2018-08-21T07:18:42.792Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-21T07:18:42.793Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/etd-cu-mdy  
+  
+ Tue Aug 21 2018 13:48:42 GMT+0630 (Myanmar Time)
+[debug] [2018-08-21T07:18:44.334Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ravichhabra/temp/yuecoetd'...
+[info] 
+[debug] [2018-08-21T07:18:44.336Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/162103965516/clients/_:getWebAppConfig  
+  
+ Tue Aug 21 2018 13:48:44 GMT+0630 (Myanmar Time)
+[debug] [2018-08-21T07:18:45.351Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

@@ -24,6 +24,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script> 
 		 <script src="js/app.js"></script>
  		<script src="js/lib.js"></script>
+		<script> internsApp.Read();</script>
  
  </head>
  <body>
@@ -56,24 +57,20 @@
   </div>
   <main class="mdl-layout__content" style="margin-left: auto; margin-right: auto">
     <div class="page-content"><!-- Your content goes here -->
-<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-  <thead>
-    <tr>
-      <th class="mdl-data-table__cell--non-numeric">Student ID</th>
-      <th>Name</th>
-      <th>Team</th>
-			<th>Project</th>
-    </tr>
-  </thead>
-  <tbody data-bind="foreach: internsBinding">
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric"  data-bind="text: key">CS-1</td>
-      <td data-bind="text: name">Intern Name 1</td>
-      <td data-bind="text: team">Team Name 1</td>
-			<td data-bind="text: project">Project Name 2</td>
-    </tr>
-</tbody>
-</table>
+<ul class="demo-list-three mdl-list" data-bind="foreach: internsBinding">
+  <li class="mdl-list__item mdl-list__item--three-line mdl-shadow--2dp demo-card-wide" style="height:100px; width: 512px">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person</i>
+      <span data-bind="text: name">Ravi</span>
+      <span class="mdl-list__item-text-body">
+			Student ID: <span data-bind="text: key"><b>CS-1</b></span><br>Team: <span data-bind="text: team">Alpha</span><br>Project: <span data-bind="text: project" >Alpha</span>
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <!--<a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a> -->
+    </span>
+  </li>
+</ul>
 </div>
   </main>
 </div>
